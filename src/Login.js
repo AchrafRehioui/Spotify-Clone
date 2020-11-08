@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Login.css';
+import { loginUrl } from './spotify';
+import { getTokenFromUrl } from './spotify';
+
 
 function Login() {
+     
     return (
+
         <div className="login">
 
         {/* Spotify logo */}
@@ -10,7 +15,7 @@ function Login() {
         alt=""/>    
             
             {/* Login with Spotify button */}
-        <a>LOGIN WITH SPOTIFY</a>
+        <a href={loginUrl}>LOGIN WITH SPOTIFY</a>
             
         </div>
     )
