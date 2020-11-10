@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import './Login.css';
 import { loginUrl } from './spotify';
-import { getTokenFromUrl } from './spotify';
 
 
 function Login() {
