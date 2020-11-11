@@ -45,6 +45,14 @@ function App() {
                 
     }
 
+    spotify.getPlaylist('0EzeTYC2ze8m5INsVQ6GFb').then(response => 
+      dispatch({
+        type: "SET_DISCOVER_WEEKLY",
+        discover_weekly: response,
+      })
+      );
+
+
 }, [token, dispatch]);
 
   console.log('Utilisateur', user);
